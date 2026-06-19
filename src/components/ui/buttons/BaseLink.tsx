@@ -21,18 +21,15 @@ const BASE =
 
 const VARIANT: Record<NonNullable<BaseLinkProps["variant"]>, string> = {
     primary:
-        `bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800
-        focus-visible:ring-blue-500 shadow-sm`,
+        "bg-burgundy text-parchment hover:bg-burgundy/90 active:bg-parchment shadow-vintage focus-visible:ring-gold",
     secondary:
-        `bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300 
-        focus-visible:ring-gray-400 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600`,
+        "bg-surface text-ink hover:bg-surface-hover active:bg-parchment-dark border border-border",
     ghost:
-        `text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-400 
-        dark:text-gray-300 dark:hover:bg-gray-800 dark:active:bg-gray-700`,
+        "text-ink hover:bg-parchment-dark active:bg-parchment-dark focus-visible:ring-gold",
     danger:
-        "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 focus-visible:ring-red-500 shadow-sm",
+        "bg-burgundy text-parchment hover:bg-burgundy/90 active:bg-burgundy shadow-vintage",
     success:
-        "bg-green-600 text-white hover:bg-green-700 active:bg-green-800 focus-visible:ring-green-500 shadow-sm",
+        "bg-olive text-parchment hover:bg-olive/90 active:bg-olive shadow-vintage",
 };
 
 const SIZE: Record<NonNullable<BaseLinkProps["size"]>, string> = {
@@ -41,7 +38,7 @@ const SIZE: Record<NonNullable<BaseLinkProps["size"]>, string> = {
     lg: "text-lg px-6 py-3 rounded-xl gap-3",
 };
 
-const ACTIVE_CLASS = "ring-2 ring-offset-2 ring-blue-500 font-semibold";
+const ACTIVE_CLASS = "bg-burgundy text-parchment shadow-sm font-medium";
 
 export default function BaseLink({
     href, children, iconLeft, iconRight, ariaLabel, 

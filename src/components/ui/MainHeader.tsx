@@ -4,7 +4,7 @@ import HeaderButton from "./buttons/HeaderButton";
 
 export default function MainHeader() {
     return (
-        <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-navbar border-b border-navbar-line">
+        <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-parchment border-b border-border shadow-sm">
             <nav className="
                 relative max-w-340 w-full mx-auto md:flex md:items-center md:justify-between 
                 md:gap-3 py-2 px-4 sm:px-6 lg:px-8"
@@ -39,7 +39,42 @@ export default function MainHeader() {
                                         isActive={true} 
                                         ariaLabel="Go to Home"
                                     >
-                                        Landing
+                                        Home
+                                    </HeaderButton>
+                                    <HeaderButton
+                                        href="#"
+                                        isActive={false}
+                                        ariaLabel="Got to Rules"
+                                    >
+                                        Rules
+                                    </HeaderButton>
+                                    <HeaderButton
+                                        href="#"
+                                        isActive={false}
+                                        ariaLabel="Go to About"
+                                    >
+                                        About
+                                    </HeaderButton>
+
+                                    <div className="my-2 md:my-0 md:mx-2">
+                                        <div className="w-full h-px md:h-4 md:border-s"></div>
+                                    </div>
+
+                                    <HeaderButton
+                                        href="#"
+                                        isActive={false}
+                                        ariaLabel="Sign In"
+                                        variant="secondary"
+                                    >
+                                        Sign In
+                                    </HeaderButton>
+                                    <HeaderButton
+                                        href="#"
+                                        isActive={false}
+                                        ariaLabel="Sign Up"
+                                        variant="primary"
+                                    >
+                                        Sign Up
                                     </HeaderButton>
                                 </div>
                             </div>

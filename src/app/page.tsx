@@ -1,3 +1,7 @@
+import HeroSection from "./_components/HeroSection";
+
 export default function Page() {
-  return <h1>Hello Next.js!</h1>
+  return(
+    <HeroSection />
+  );
 }
