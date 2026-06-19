@@ -1,6 +1,6 @@
 import HeroSection from "./_components/HeroSection";
 
-export default function Page() {
+export default function HomePage() {
   return(
     <HeroSection />
   );

@@ -34,7 +34,7 @@ export default function MainHeader() {
                             <div className="grow">
                                 <div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
                                     <HeaderButton 
-                                        href="#" 
+                                        href="/" 
                                         icon={<HomeIcon></HomeIcon>}
                                         isActive={true} 
                                         ariaLabel="Go to Home"
@@ -42,14 +42,14 @@ export default function MainHeader() {
                                         Home
                                     </HeaderButton>
                                     <HeaderButton
-                                        href="#"
+                                        href="/rules"
                                         isActive={false}
                                         ariaLabel="Got to Rules"
                                     >
                                         Rules
                                     </HeaderButton>
                                     <HeaderButton
-                                        href="#"
+                                        href="/about"
                                         isActive={false}
                                         ariaLabel="Go to About"
                                     >
